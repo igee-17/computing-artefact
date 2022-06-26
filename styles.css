@@ -1,0 +1,147 @@
+:root {
+  --gen-font: "Mukta", sans-serif;
+  --dot-font: "Rubik Moonrocks", cursive;
+  --bck-color: #d9d9d9;
+  --test-color: #565857;
+  --light-blue: #7692ff;
+  --slight-green: #56876d;
+  --white: #fafafa;
+}
+
+*,
+body,
+::before,
+::after {
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: var(--gen-font);
+  color: var(--test-color);
+}
+
+.section {
+  background: var(--bck-color);
+  padding-top: 2rem;
+  /* background: red; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-center {
+  width: 100%;
+  background-color: var(--test-color);
+  min-height: 100vh;
+  position: relative;
+  /* display: flex; */
+  /* justify-content: center; */
+  flex-direction: column;
+  padding-top: 2rem;
+}
+.line {
+  border-top: 2px solid var(--test-color);
+  margin: 0px auto;
+  width: 95%;
+  /* height: 2px; */
+}
+
+.item {
+  text-align: center;
+  margin: 1rem auto;
+  width: 55%;
+  height: 40rem;
+  box-shadow: -4px 4px 10px rgb(20, 20, 20);
+  border-radius: 9px 9px;
+  background-color: var(--bck-color);
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.heading {
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-family: var(--dot-font);
+  letter-spacing: 3px;
+}
+
+.item-heading {
+  text-transform: capitalize;
+  letter-spacing: 5px;
+}
+
+.image {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 15rem;
+  height: 15rem;
+  margin: 0px auto;
+
+  /* text-align: center; */
+}
+
+.text {
+  font-size: 1.2rem;
+}
+
+/* SMALL SCREEN */
+@media only screen and (max-width: 600px) {
+  .section-center {
+    width: 100%;
+    background-color: var(--test-color);
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    padding-top: 2rem;
+  }
+
+  .item {
+    text-align: center;
+    margin: 1rem auto;
+    width: 80%;
+    height: 35rem;
+    box-shadow: -4px 4px 10px rgb(20, 20, 20);
+    border-radius: 9px 9px;
+    background-color: var(--bck-color);
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .item-heading {
+    text-transform: capitalize;
+    letter-spacing: 5px;
+  }
+
+  .image {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+  .internet {
+    height: 40rem !important;
+  }
+
+  .legal {
+    height: 50rem !important;
+  }
+
+  .api {
+    height: 44rem !important;
+  }
+}
